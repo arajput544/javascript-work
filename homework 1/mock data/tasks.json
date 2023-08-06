@@ -1,0 +1,90 @@
+[
+    {
+    "id": 1  ,
+    "name": "Developing"  ,
+    "details" : "Development of a software" ,
+    "priority" : "high" ,
+    "status":"in-progress",
+    "timeline" : {
+        "date_assigned" : "09-01-2022",
+        "date_due" : "09-10-2022",
+        "date_updated":"09-05-2022"
+    },
+    "user_id": 1,
+    "project_id": 1
+},
+{
+    "id": 2  ,
+    "name": "testing"  ,
+    "details" : "testing of a software" ,
+    "priority" : "medium" ,
+    "status":"in-review",
+    "timeline" : {
+        "date_assigned" : "09-10-2022",
+        "date_due" : "09-20-2022",
+        "date_updated":"09-15-2022"
+    },
+    "user_id": 2,
+    "project_id": 1
+},
+{
+    "id": 3 ,
+    "name": "QA"  ,
+    "details" : "QA of a software" ,
+    "priority" : "low" ,
+    "status":"in-review",
+    "timeline" : {
+        "date_assigned" : "09-20-2022",
+        "date_due" : "09-20-2022",
+        "date_updated":"09-25-2022"
+    },
+    "user_id": 3,
+    "project_id": 2
+},
+
+    {
+        "id": 4 ,
+        "name": "web dev"  ,
+        "details" : "web dev of a software" ,
+        "priority" : "high" ,
+        "status":"completed",
+        "timeline" : {
+            "date_assigned" : "09-21-2022",
+            "date_due" : "09-22-2022",
+            "date_updated":"09-25-2022"
+        },
+        "user_id": 3,
+        "project_id": 3
+    },
+{
+    "id": 5 ,
+        "name": "encryption"  ,
+        "details" : "encryption of a software" ,
+        "priority" : "high" ,
+        "status":"completed",
+        "timeline" : {
+            "date_assigned" : "09-12-2022",
+            "date_due" : "09-22-2022",
+            "date_updated":"09-30-2022"
+        },
+        "user_id": 3,
+        "project_id": 3
+},
+{
+    "id": 6 ,
+        "name": "project life cycle"  ,
+        "details" : "project life cycle of a software" ,
+        "priority" : "medium" ,
+        "status":"assigned",
+        "timeline" : {
+            "date_assigned" : "09-23-2022",
+            "date_due" : "09-25-2022",
+            "date_updated":"09-30-2022"
+        },
+        "user_id": 3,
+        "project_id": 4
+}
+
+    
+]
+  

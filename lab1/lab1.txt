@@ -1,0 +1,138 @@
+
+
+const printerInkLevel = (obj) => {
+    let min = 999999999;
+    for (let key in obj) {
+        if(obj[key]<min){
+            min = obj[key]
+        }
+        // console.log(min);
+    }
+    return min;
+}
+const a = printerInkLevel({cyan: 100, magenta: 55, yellow: 50, black: 90 });
+
+console.log(a);
+console.log(printerInkLevel({ cyan: 0, magenta: 70, yellow: 90, black: 80 }));
+
+
+
+const evenOddSums = (arr) =>{
+    const output=[];
+    let sumE=0;
+    let sumO=0;
+    arr.forEach(element => {
+        if(element%2===0){
+            sumE+=element;
+        }
+        else{
+            sumO+=element;
+        }
+    }    
+    );
+    output.push(sumE);
+    output.push(sumO);
+
+    return output;   
+}
+
+console.log(evenOddSums([2, 1, 9, 4, 8, 7]));
+
+const arrayObjectSum = (nested) => {
+    const arr_output=[];
+
+        for (let i = 0; i< nested.length; i++) {
+            const obj={};
+            const arr_integer =[];
+            let sum = 0;
+          for (let j = 0; j < nested[i].length; j++) {
+            
+            if(typeof nested[i][j] === 'number'){
+                arr_integer.push(nested[i][j]);
+                sum+=nested[i][j];
+
+            }
+            // sum+=nested[i][j];    
+            
+          }
+        //   arr_integer.push(sum);
+        obj['array'] = arr_integer;
+        obj['sum'] = sum;
+        arr_output.push(obj);
+        }
+
+        return arr_output;  
+        
+       };
+  ;
+  console.log(arrayObjectSum([
+    [1, 'x', 2, true, 3, 4, 0, 5],
+    [0, 'y', 'z', 2],
+    [1, 3, 5, false, 'hello']
+   ]));
+
+
+
+   
+
+   const reverseStartingAt = (arr , str) =>{
+        const output =[];
+        let c=0;
+        for(let i=0; i<arr.length;i++){
+            // if(arr[i]!==str){
+            //     continue;
+            // }
+            if(arr[i]===str){
+                output.push(arr[i]);
+                break;
+
+            }
+            output.push(arr[i]);     
+            c=i;       
+        
+   }
+   for(let j=(arr.length-1); j>c+1; j--){
+    output.push(arr[j]);
+}   
+    return output;
+   }
+console.log(reverseStartingAt(['a', 'b', 'c', 'd', 'e','f','g'], 'c'));
+//(===================================================================)
+
+
+
+
+
+
+
+const cleanCorruptedData = (str) => {
+    //let arr=[];
+    obj={};
+    let stringsplit = (str.split('*'));
+    let arr = stringsplit.filter(Boolean);
+    // console.log(arr);
+    // obj.first_name=1;
+    // obj.second_name=2;
+    // obj.age=3;
+   obj['first'] = arr[0];
+   obj['second'] = arr[1];
+   obj['age'] = arr[2];
+    console.log(obj);   
+
+
+
+
+    // for(let i=0; i<str.length;i++){
+    //     if( str[i] === '*'){
+    //         for(let j=i; str[j] === '*', j++){
+    //             continue;
+    //         }
+    //     }
+    //     if(str[i] === String){
+                
+    //     }   
+    // }
+
+}
+cleanCorruptedData('Bruce**Wayne***48')
+cleanCorruptedData('Peter****Parker**21')

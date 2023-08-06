@@ -1,0 +1,15 @@
+{
+  "name": "js-testing-demo",
+  "version": "1.0.0",
+  "description": "intro to using mocha.js and chai.js",
+  "main": "deck.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Cydney Auman",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.1.0"
+  }
+}

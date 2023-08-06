@@ -1,0 +1,52 @@
+[
+    {
+    "id" : 1,
+    "first_name": "vijaye",
+    "last_name":"shekar",
+    "position":"assistant manager" ,
+    "status" : true,
+    "project_id":4
+},
+{
+    "id" : 2,
+    "first_name": "raj",
+    "last_name":"sharma",
+    "position":"assosciate manager" ,
+    "status" : true,
+    "project_id" : 3
+},
+{
+    "id" : 3,
+    "first_name": "rajendra",
+    "last_name":"verma",
+    "position":"manager" ,
+    "status" : true,
+    "project_id":3
+
+},
+{
+    "id" : 4,
+    "first_name": "john",
+    "last_name":"morgan",
+    "position":"tech lead" ,
+    "status" : true,
+    "project_id":2
+    
+},
+{
+    "id" : 5,
+    "first_name": "jack",
+    "last_name":"velch",
+    "position":"project head" ,
+    "status" : true,
+    "project_id" : 1
+},
+{
+    "id" : 6,
+    "first_name": "rohan",
+    "last_name":"pandey",
+    "position":"hr" ,
+    "status" : true,
+    "project_id":1
+}
+]

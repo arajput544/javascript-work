@@ -1,0 +1,37 @@
+[
+    {
+        "_id": 1,
+        "first": "Diana",
+        "last": "Prince",
+        "position": "Project Manger",
+        "isActive": true
+    },
+    {
+        "_id": 2,
+        "first": "Tony",
+        "last": "Stark",
+        "position": "Project Manger",
+        "isActive": true
+    },
+    {
+        "_id": 3,
+        "first": "Harley",
+        "last": "Quinn",
+        "position": "Software Engineer",
+        "isActive": true
+    },
+    {
+        "_id": 4,
+        "first": "Peter",
+        "last": "Parker",
+        "position": "Software Engineer",
+        "isActive": true
+    },
+    {
+        "_id": 5,
+        "first": "Bruce",
+        "last": "Wayne",
+        "position": "Intern",
+        "isActive": false
+    }
+]

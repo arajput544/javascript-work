@@ -1,0 +1,60 @@
+RESOURCE ROUTE projects.js
+
+GET     /projects
+- query param: name
+- respond with all projects (or project partial name matches)
+
+POST    /projects
+- respond with newly created project including the id
+- respond with an error if the project name already exists
+
+GET     /projects/:id
+- respond with a project matching the id (including count of tasks and users associated to project)
+- respond with error if no project match found
+
+PUT     /projects/:id
+- respond with the updated project matching the id
+- respond with an error if the project name already exists
+- respond with error if no project match found
+
+-----------------------------------------------------------------------------------------
+
+RESOURCE ROUTE tasks.js
+
+GET     /tasks
+- respond with all tasks
+
+POST    /tasks
+-respond with newly created task including the id
+
+GET     /tasks/:id
+-respond with a task matching the id
+- respond with error if no task match found
+
+PUT     /tasks/:id
+- when only status being updated
+    - respond with the updated task matching the id
+- when other values are being updated
+    - respond with the updated task matching the id (only if the task "assigned")
+    - respond with error if task status is not "assigned"
+- respond with error if no task match found
+
+DELETE  /tasks/:id
+- respond with a confirmation of deleted task matching the id
+- respond with error if no task match found
+
+-----------------------------------------------------------------------------------------
+
+RESOURCE ROUTE users.js
+
+GET     /users
+- query param: active
+- respond with all users (or user matches by active/inactive)
+
+GET     /users/:id
+- respond with a user matching the id
+- respond with error if no user match found
+
+PUT     /users/:id
+- respond with the updated user matching the id
+- respond with error if no user match found

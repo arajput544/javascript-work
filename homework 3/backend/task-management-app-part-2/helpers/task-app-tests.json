@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "71dcc005-b7ae-4bb2-991e-b1ac0a86bdd8",
+		"name": "Task App Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8888/projects",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/projects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"Nodemon\",\n        \"description\": \"nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected\",\n        \"repository\": \"https://github.com/remy/nodemon\",\n        \"manager\": \"636c82dad44702d1b183b66a\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8888/projects",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/projects/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8888/projects/636da1c548bc811952e5ab38",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"projects",
+						"636da1c548bc811952e5ab38"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/projects/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"Nodemon\",\n        \"description\": \"nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected\",\n        \"repository\": \"https://github.com/remy/nodemon\",\n        \"manager\": \"636c82dad44702d1b183b66a\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8888/projects/636d9e8349d9fd31f27b7c1e",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"projects",
+						"636d9e8349d9fd31f27b7c1e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Security upgrade\",\n    \"details\": \"update-notifier from 4.1.0 to 6.0.0\",\n    \"priority\": \"low\",\n    \"status\": \"assigned\",\n    \"timeline\": {\n        \"assigned\": \"2022-11-11\",\n        \"due\": \"2022-11-18\",\n        \"last_updated\": \"2022-11-11\"\n    },\n    \"user\": \"6372f3a4745115e74aa46b67\",\n    \"project\": \"6372fc1522463c2d3d4f65ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8888/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tasks/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/tasks/636da04567813cb5a54df4e1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"tasks",
+						"636da04567813cb5a54df4e1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tasks/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Security upgrade\",\n    \"details\": \"update-notifier from 4.1.0 to 6.0.0\",\n    \"priority\": \"high\",\n    \"status\": \"completed\",\n    \"timeline\": {\n        \"assigned\": \"2022-11-11\",\n        \"due\": \"2022-11-18\",\n        \"last_updated\": \"2022-11-11\"\n    },\n    \"user\": \"6372f3a4745115e74aa46b69\",\n    \"project\": \"6372fc1522463c2d3d4f65ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/tasks/637302a1f9a34d52d3137489",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"tasks",
+						"637302a1f9a34d52d3137489"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tasks/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8888/tasks/6372fd2c3f8afc85639161cc",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"tasks",
+						"6372fd2c3f8afc85639161cc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8888/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8888/users/636c007471238aaed4949c8f",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"users",
+						"636c007471238aaed4949c8f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first\": \"Peter\",\n    \"last\": \"Parker\",\n    \"position\": \"QA Engineer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8888/users/636da1c448bc811952e5ab31",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"users",
+						"636da1c448bc811952e5ab31"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

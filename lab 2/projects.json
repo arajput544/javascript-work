@@ -1,0 +1,39 @@
+[
+  {
+    "id" : 1,
+    "name": "ElevatorProject",
+    "description": "This project is based on designing a software for elevator",
+    "assosciate_repository_url" :"www.github.com/elevatorproject",
+    "manager" : "John",
+    "tasks_id" : [1,2],
+    "users_id" : [5,6]    
+},
+{
+  "id":2,
+  "name": "DistrictAttorney",
+  "description": "This project is designing software for district attorney",
+  "assosciate_repository_url" : "www.github.com/districtattorney" ,
+  "manager" : "jack",
+  "tasks_id" : 3,
+  "users_id" : 4 
+},
+{
+  "id":3,
+  "name": "CarWash",
+  "description": "This project is designing software for car wash",
+  "assosciate_repository_url" : "www.github.com/carwash" ,
+  "manager" : "logan",
+  "tasks_id" : [4,5],
+  "users_id" : [2,3]   
+},
+{
+  "id":4,
+  "name": "HousingCompany",
+  "description": "This project is designing software for housing company",
+  "assosciate repository url" :   "www.github.com/housingcompany",
+  "manager" : "sebastian",
+  "tasks_id" : 6,
+  "users_id" : 1
+}
+
+]

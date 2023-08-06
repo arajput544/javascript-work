@@ -1,0 +1,52 @@
+GET   /projects
+- query param: name
+- responds with all projects
+
+GET   /tasks
+- responds with all tasks
+
+GET   /users
+- query param: status
+- responds with users which are active/inactive based on the status 
+- responds with all users if no status is given
+
+GET  /projects/:id
+- responds with a project matching the id
+- respond with count/number of tasks if the project has tasks
+- responds with error if no project matches  
+
+GET  /tasks/:id
+- responds with a task matching the id
+- responds with error if no task matches 
+
+GET  /users/:id
+- responds with a user matching the id
+- responds with error if no user matches 
+
+POST  /projects
+- responds with newly created projects including id and name should be unique
+
+POST  /tasks
+- responds with newly created task including id
+
+PUT    /projects/:id
+- responds with updated projects matching the id 
+- respond with error if project name is not unique
+- responds with error if no project matches
+
+PUT    /tasks/:id
+- responds with updated tasks(name, detail and timeline object) matching the id 
+- respond with error if task's status is not assigned    
+- responds with error if no tasks matches
+
+PUT    /users/:id
+- responds with updated users matching the id 
+- responds with updated status (active/inactive)
+- responds with error if no user matches
+
+
+DELETE /tasks/:id   
+- responds with a confirmation of deleted tasks matching the id
+- responds with error if no task matches 
+
+

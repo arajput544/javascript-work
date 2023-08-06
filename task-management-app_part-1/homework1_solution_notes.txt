@@ -1,0 +1,41 @@
+THE SOLUTION IN HOMEWORK 1 ARE FOR MOCK DATA ONLY (ASSUMES WE HAVE NO DB ONLY JSON FILES)
+SOLUTIONS FOR HOMEWORK 2 MUST USE MONGOOSE + MONGO DB AND DB QUERIES
+MONGO DB QUERIES MUST SUPPORT FINDING BY ID, RELATIONSHIP QUERIES AND FILTERING QUERIES
+
+
+JSON ------------------------------------------------------------------
+- lowercase keys
+- no spaces, no slashes, no dashes
+- use camelCase (userIds) OR use snake_case (user_ids)
+
+DATA RELATIONSHIPS ----------------------------------------------------
+- consider the unbound growth of projects to tasks when moving to Mongo
+
+REST API --------------------------------------------------------------
+- plurals
+    - common convention is to use plural for resources endpoints
+
+- uniform interface
+    - all resources endpoints start with the same plural noun and use an http verb
+    - YES
+        - /projects
+        - /projects/:id
+    - NO
+        - /allProjects
+        - /getProject
+
+- client server seperation
+    - accept POST and PUT bodies should not depend on how clients sends
+        - server sends all valid properties to client including ids from POSTs
+        - client should be able to send all valid properties back to server
+        - client should not be forced to send partial payload
+            - optional ability to accept partial or full PUT body
+
+KEY BUSINESS LOGIC ------------------------------------------------------
+    - unique project names
+        - enforce on POST
+        - enforce on PUT (consider the full PUT payload)
+    - "assigned" task in DB - source of truth
+        - keep it simple versus adding layers of complexity
+            - what do we do?
+            - "assigned" payload + changes
